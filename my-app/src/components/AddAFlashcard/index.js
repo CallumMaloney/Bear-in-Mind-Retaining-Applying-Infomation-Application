@@ -21,8 +21,10 @@
   import Swal from 'sweetalert2'
 
 function AddAFlashcard({ setPage }) {
+  const [category, setCategory] = useState("")
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
+  const [categoryInputValue, setCategoryInputValue] = useState("")
   const [answerInputValue, setAnswerInputValue] = useState("");
   const [questionInputValue, setQuestionInputValue] = useState("");
 
@@ -36,8 +38,15 @@ function AddAFlashcard({ setPage }) {
     setAnswer(e.target.value);
   }
 
+  function handleChangeCategory(e) {
+    setCategoryInputValue(e.target.value);
+    setCategory(e.target.value);
+    console.log(categoryInputValue)
+  }
+
+
   function addCard(){
-    flashCardsListData.push({question: question, answer: answer})
+    flashCardsListData.push({category: category,question: question, answer: answer})
     setAnswerInputValue("")
     setQuestionInputValue("")
     console.log(flashCardsListData)
@@ -73,6 +82,17 @@ function AddAFlashcard({ setPage }) {
         <h1 className="addAFlashCard-h1">CREATE A FLASHCARD</h1>
       </div>
       <div className="flashcard-div">
+        <div className="flashcard-div-category">
+          <label htmlfor="category">CATEGORY</label>
+          <textarea
+            className="category"
+            type="text"
+            contenteditable="true"
+            name="category"
+            value={categoryInputValue}
+            onChange={handleChangeCategory}
+          />
+        </div>
         <label htmlFor="question">QUESTION</label>
         {/* HELP */}
 

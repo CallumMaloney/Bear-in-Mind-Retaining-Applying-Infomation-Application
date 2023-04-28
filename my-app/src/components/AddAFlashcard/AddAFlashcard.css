@@ -75,6 +75,13 @@ h1.addAFlashCard-h1 {
     padding: 2.5em;
     border-radius: 30px;
 }
+.flashcard-div-category{
+    display: flex;
+    flex-direction: column;
+}
+.flashcard-div-category>textarea{
+    height: 2em;
+}
 
 .firstWhiteBox{
     height: 10em;
