@@ -46,6 +46,7 @@ function AddAFlashcard({ setPage }) {
       icon: 'success',
       showConfirmButton: false,
       timer: 2000,
+      
     })
     
   }
