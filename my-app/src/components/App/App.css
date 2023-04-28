@@ -84,6 +84,7 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: scroll;
 }
 
 .main__random_flashcard-button{
@@ -154,7 +155,8 @@ img{
   box-shadow: 2px 2px 5px 2px #FFC689;
   padding: 20px;
   width: 20rem;
-  min-height: 17rem;
+  min-height: 22rem;
+  max-height: 22rem;
   margin: 1rem;
   margin-left: 1em;
   margin-top: 1em;
@@ -164,17 +166,23 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .singleFlashcard__card-answer{
+  height: 10em;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: .5em;
+  max-height: 10em;
+  
 }
 
 .singleFlashcard__card-category{
   display: flex;
+  position: relative;
+  top: -1em;
   align-items: center;
   justify-content: center;
   margin-bottom: .6em;
@@ -182,6 +190,28 @@ img{
   font-size: .8em;
   font-weight: 600;
 
+}
+.singleFlashcard__card-delete{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.singleFlashcard__card-delete>button{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+.singleFlashcard__card-delete>button::before{
+  content: "X";
+  font-size: .8em;
 }
 
 .overlay__content{
