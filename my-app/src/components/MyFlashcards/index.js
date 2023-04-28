@@ -4,6 +4,15 @@ import "./MyFlashcards.css"
 
 function MyFlashcards({flashcardsList, setPage, setFlashCards}) {
 
+    function handleClickDelete(index) {
+        const newFlashcardsList = [...flashcardsList]; // make a copy of the array
+        console.log(flashcardsList)
+        console.log(newFlashcardsList)
+    newFlashcardsList.splice(index, 1); // remove the flashcard at the specified index
+    setFlashCards(newFlashcardsList);
+        
+    }
+
     useEffect(() => {
         setFlashCards(flashcardsList);
       }, [setFlashCards, flashcardsList]);
@@ -25,7 +34,13 @@ function MyFlashcards({flashcardsList, setPage, setFlashCards}) {
         <div className="overlay__content">
 
             {flashcardsList.map((flashcard, index) => {
-                return <Flashcard key={index} flashcardList={flashcard}/>
+                return <Flashcard 
+                key={index} 
+                flashcardList={flashcard} 
+                index={index}
+                setFlashCards={setFlashCards}
+                handleClickDelete={handleClickDelete}
+                />
             })}
 
         </div>

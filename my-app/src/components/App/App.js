@@ -13,13 +13,14 @@ function App() {
 
   // this is the state for the flashcards the initial value is the data from the stateData.js file
   const [flashCardsList, setFlashCards] = useState(flashCardsListData);
+  
 
 
   function renderPage() {
     if (page === "homepage") {
       return <HomePage setPage={setPage} flashCardsList={flashCardsList} />;
     } else if (page === "myFlashcards") {
-      return <MyFlashcards setPage={setPage} flashcardsList={flashCardsList} setFlashCards={setFlashCards} />;
+      return <MyFlashcards setPage={setPage}  flashcardsList={flashCardsList} setFlashCards={setFlashCards} />;
     } else if (page === "testMe") {
       return <TestMe setPage={setPage} flashcardsList={flashCardsList}/>
     } else if (page === "addAFlashcard") {
