@@ -41,7 +41,7 @@ function TestMe({flashcardsList, setPage}) { // flashcardsList is the all the fl
         <div className="overlay__testme-content-question">
           <h2>Question:</h2>
           {randomizedFlashcard && ( // this is a conditional rendering. If there is a random flashcard, then the question is displayed
-            <h3>{randomizedFlashcard[Object.keys(randomizedFlashcard)[0]]}</h3> // this is the question
+            <h3>{randomizedFlashcard[Object.keys(randomizedFlashcard)[1]]}</h3> // this is the question
           )}
         </div>
         <div className="overlay__testme-content-answer">
@@ -51,7 +51,7 @@ function TestMe({flashcardsList, setPage}) { // flashcardsList is the all the fl
 
               <h2>Answer:</h2>
               {randomizedFlashcard && ( // this is a conditional rendering. If there is a random flashcard, what is inside the parentheses is displayed
-                <h3>{randomizedFlashcard[Object.keys(randomizedFlashcard)[1]]}</h3>
+                <h3>{randomizedFlashcard[Object.keys(randomizedFlashcard)[2]]}</h3>
               )}
             </div>
           </>

@@ -59,6 +59,16 @@ img{
 
 }
 
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .6em;
+  font-style: italic;
+  font-size: .8em;
+  font-weight: 600;
+}
+
 
 .question {
   font-size: 17px;
