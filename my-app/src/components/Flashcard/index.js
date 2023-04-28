@@ -1,11 +1,12 @@
-function Flashcard ({flashcardList}) {
+function Flashcard ({flashcardList, setFlashCards, index, handleClickDelete}) {
+
 
 
     return (
         <div className = "singleFlashcard">
             <div className = "singleFlashcard__card">
                 <div className = "singleFlashcard__card-delete">
-                    <button className = "delete"></button>
+                    <button className = "delete" onClick={() => handleClickDelete(index)}></button>
                 </div>
                 <div className = "singleFlashcard__card-category">
                     <div className = "category">{flashcardList.category}</div>

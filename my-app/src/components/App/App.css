@@ -59,33 +59,6 @@ img{
 
 }
 
-.category{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: .6em;
-  font-style: italic;
-  font-size: .8em;
-  font-weight: 600;
-}
-
-
-.question {
-  font-size: 17px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.answer {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: scroll;
-}
 
 .main__random_flashcard-button{
   margin-top: .6em;
@@ -153,13 +126,13 @@ img{
   border: 1px solid #cccccc;
   border-radius: 30px;
   box-shadow: 2px 2px 5px 2px #FFC689;
-  padding: 20px;
   width: 20rem;
-  min-height: 22rem;
+  min-height: 18rem;
   max-height: 22rem;
   margin: 1rem;
   margin-left: 1em;
   margin-top: 1em;
+  text-align: center;
 
 }
 .singleFlashcard__card-question{
@@ -170,22 +143,18 @@ img{
 }
 
 .singleFlashcard__card-answer{
-  height: 10em;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: .5em;
-  max-height: 10em;
+  
   
 }
 
 .singleFlashcard__card-category{
   display: flex;
   position: relative;
-  top: -1em;
   align-items: center;
   justify-content: center;
-  margin-bottom: .6em;
   font-style: italic;
   font-size: .8em;
   font-weight: 600;
@@ -195,6 +164,8 @@ img{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 95%;
+  margin-top: .2em;
 }
 .singleFlashcard__card-delete>button{
   width: 24px;
@@ -212,6 +183,33 @@ img{
 .singleFlashcard__card-delete>button::before{
   content: "X";
   font-size: .8em;
+}
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .6em;
+  font-style: italic;
+  font-size: .8em;
+  font-weight: 600;
+}
+
+
+.question {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
 }
 
 .overlay__content{
