@@ -20,9 +20,9 @@ function RandomFlashCard({ flashcards,flashCardsListData}) { // changeFlashcard 
       <div className="main__random_flashcard-card">
         {randomizedFlashcard && (
           <div>
-            <div className="category">{randomizedFlashcard[Object.keys(randomizedFlashcard)[0]]}</div>
-            <div className="question">{randomizedFlashcard[Object.keys(randomizedFlashcard)[1]]}</div> 
-            <div className="answer">{randomizedFlashcard[Object.keys(randomizedFlashcard)[2]]}</div>
+            <div className="category">{Object.values(randomizedFlashcard)[0]}</div>
+            <div className="question">{Object.values(randomizedFlashcard)[1]}</div> 
+            <div className="answer">{Object.values(randomizedFlashcard)[2]}</div>
           </div>
         )}
       </div>

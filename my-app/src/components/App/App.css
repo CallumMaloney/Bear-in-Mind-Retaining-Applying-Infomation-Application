@@ -179,6 +179,7 @@ img{
   font-weight: bold;
   color: white;
   border: none;
+  cursor: pointer;
 }
 .singleFlashcard__card-delete>button::before{
   content: "X";
