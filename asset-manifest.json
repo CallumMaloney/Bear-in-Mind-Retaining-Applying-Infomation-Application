@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Bear-in-Mind/static/css/main.1031a6fa.css",
+    "main.js": "/Bear-in-Mind/static/js/main.35e563d4.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Bear-in-Mind/static/js/787.28cb0dcd.chunk.js",
+    "static/media/bearTitleImage.png": "/Bear-in-Mind/static/media/bearTitleImage.4d8da6efcc06a80f1c38.png",
+    "index.html": "/Bear-in-Mind/index.html",
+    "main.1031a6fa.css.map": "/Bear-in-Mind/static/css/main.1031a6fa.css.map",
+    "main.35e563d4.js.map": "/Bear-in-Mind/static/js/main.35e563d4.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Bear-in-Mind/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1031a6fa.css",
+    "static/js/main.35e563d4.js"
+  ]
+}
