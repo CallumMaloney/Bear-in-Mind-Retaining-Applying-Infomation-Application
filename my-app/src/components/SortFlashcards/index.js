@@ -4,8 +4,8 @@ import "./SortFlashcards.css";
 function SortFlashcards({ handleSortChange }){
 
     function handleChange(event) { // event is the onChange event
-        const selected = event.target.value;
-        handleSortChange(selected);
+        const selected = event.target.value; // selected is the value of the selected option
+        handleSortChange(selected); //  call the handleSortChange function passed down from MyFlashcards and pass it the selected value
       }
 
 
