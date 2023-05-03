@@ -24,6 +24,12 @@ To help apply infomation, we have a "Test Me" page.
 
 This page allows the user to see a random question to one of the random flashcards on screen. To reveal the answer, the user can press a button. The user can also request another question.
 
+To be added in the future:
+
+- Learning Journal
+- Sort By feature implimented on the "Test Me" page
+- Category drop down menu seperate from the Sort By menu
+
 Demo of the App:
 
 
