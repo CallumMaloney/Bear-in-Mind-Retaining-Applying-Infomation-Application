@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CallumMaloney.github.io/Bear-in-Mind/static/css/main.1031a6fa.css",
-    "main.js": "/CallumMaloney.github.io/Bear-in-Mind/static/js/main.dfaf8e20.js",
-    "static/js/787.28cb0dcd.chunk.js": "/CallumMaloney.github.io/Bear-in-Mind/static/js/787.28cb0dcd.chunk.js",
-    "static/media/bearTitleImage.png": "/CallumMaloney.github.io/Bear-in-Mind/static/media/bearTitleImage.4d8da6efcc06a80f1c38.png",
-    "index.html": "/CallumMaloney.github.io/Bear-in-Mind/index.html",
-    "main.1031a6fa.css.map": "/CallumMaloney.github.io/Bear-in-Mind/static/css/main.1031a6fa.css.map",
-    "main.dfaf8e20.js.map": "/CallumMaloney.github.io/Bear-in-Mind/static/js/main.dfaf8e20.js.map",
-    "787.28cb0dcd.chunk.js.map": "/CallumMaloney.github.io/Bear-in-Mind/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/CallumMaloney.github.io/Bear_in_Mind/static/css/main.1031a6fa.css",
+    "main.js": "/CallumMaloney.github.io/Bear_in_Mind/static/js/main.bace07f1.js",
+    "static/js/787.28cb0dcd.chunk.js": "/CallumMaloney.github.io/Bear_in_Mind/static/js/787.28cb0dcd.chunk.js",
+    "static/media/bearTitleImage.png": "/CallumMaloney.github.io/Bear_in_Mind/static/media/bearTitleImage.4d8da6efcc06a80f1c38.png",
+    "index.html": "/CallumMaloney.github.io/Bear_in_Mind/index.html",
+    "main.1031a6fa.css.map": "/CallumMaloney.github.io/Bear_in_Mind/static/css/main.1031a6fa.css.map",
+    "main.bace07f1.js.map": "/CallumMaloney.github.io/Bear_in_Mind/static/js/main.bace07f1.js.map",
+    "787.28cb0dcd.chunk.js.map": "/CallumMaloney.github.io/Bear_in_Mind/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1031a6fa.css",
-    "static/js/main.dfaf8e20.js"
+    "static/js/main.bace07f1.js"
   ]
 }
