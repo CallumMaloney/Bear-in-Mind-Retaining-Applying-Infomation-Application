@@ -1,0 +1,9 @@
+.sort-flashcards>label{
+    margin-right: .4em;
+}
+
+.sort-flashcards>select{
+    background-color: #d06e32;
+    border-radius: 12px;
+    text-align: center;
+}
