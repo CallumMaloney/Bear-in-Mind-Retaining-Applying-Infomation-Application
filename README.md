@@ -18,6 +18,8 @@ In the "My Flashcards" page, the user has the ability to sort flashcards by:
 - Ascending (A-Z)
 - Descending (Z-A)
 
+(In the Demo video, for some reason the drop down menu containing the options mentioned does not appear on the video. On my end, it did appear as you will be able to see in the code)
+
 To help apply infomation, we have a "Test Me" page. 
 
 This page allows the user to see a random question to one of the random flashcards on screen. To reveal the answer, the user can press a button. The user can also request another question.
