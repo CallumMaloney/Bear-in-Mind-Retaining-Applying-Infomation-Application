@@ -18,7 +18,7 @@ In the "My Flashcards" page, the user has the ability to sort flashcards by:
 - Ascending (A-Z)
 - Descending (Z-A)
 
-(In the Demo video, for some reason the drop down menu containing the options mentioned does not appear on the video. On my end, it did appear as you will be able to see in the code)
+(In the Demo video, for some reason the drop down menu containing the options mentioned does not appear on the video. After testing, this seems to be an error with the software used to record the demo. When running the app, the drop down menu appears.)
 
 To help apply infomation, we have a "Test Me" page. 
 
