@@ -5,6 +5,11 @@
 .App{
   height: 100vh;
   background-color: #247976;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .overlay{
@@ -220,4 +225,20 @@ img{
   justify-content: center;
   align-items: center;
   
+}
+
+@media screen and (max-width: 475px){
+  img{
+    width: 20em;
+  }
+  .main__random_flashcard-card{
+    width: 350px;
+  }
+}
+
+@media screen and (max-height: 785px){
+
+  .nav__buttons{
+    margin-top: 1em;
+  }
 }

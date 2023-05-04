@@ -126,3 +126,31 @@
     margin:1em 0em;
 
 }
+/* make the page more responsive by making everything more compact when the with gets to 600px*/
+@media screen and (max-width:600px){ 
+
+  .overlay__testme-content-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .overlay__testme-content-subheading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .8em;
+  }
+  .overlay__testme-content-question{
+    width:350px;
+  }
+  .overlay__testme-content-answerbox{
+    width:350px;
+    height: 350px;
+  }
+  .overlay__testme-content-answerbox>h3{
+    font-size: 1.1em;
+  }
+
+}
