@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import HomePage from "../HomePage";
 import MyFlashcards from "../MyFlashcards";
