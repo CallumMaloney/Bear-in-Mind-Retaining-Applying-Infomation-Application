@@ -1,5 +1,7 @@
 # Bear In Mind
 
+(Link for app in about section)
+
 Bear In Mind is an application focused towards retaining and applying infomation. 
 
 To help retain infomation, we have have used flashcards that take in user input. The user will input:
