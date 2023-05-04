@@ -1,6 +1,6 @@
 # Bear In Mind
 
-bearinmindapp.netlify.app
+https://bearinmindapp.netlify.app/
 
 Bear In Mind is an application focused towards retaining and applying infomation. 
 
