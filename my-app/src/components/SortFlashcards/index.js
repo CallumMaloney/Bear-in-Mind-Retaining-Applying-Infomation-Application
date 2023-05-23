@@ -14,6 +14,7 @@ function SortFlashcards({ handleSortChange }){
         <div className="sort-flashcards">
             <label htmlFor="sort-flashcards__select-box">Sort By:</label>
             <select id="sort-flashcards__select-box" onChange={handleChange}>
+                <option>Default</option>
                 <option value="category">Category</option>
                 <option value="a-z">Ascending</option>
                 <option value="z-a">Descending</option>

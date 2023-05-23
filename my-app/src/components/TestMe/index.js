@@ -1,27 +1,27 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./TestMe.css";
+import SortTestMe from "../SortTestMe";
 
-function TestMe({flashcardsList, setPage}) { // flashcardsList is the all the flashcards from the state in App.js
-
+function TestMe({ flashcardsList, setPage, setFlashCards }) {
   const [randomIndex, setRandomIndex] = useState(0); // this is the state for the random index
-  const [showAnswer, setShowAnswer] = useState(false); // this is the state for the answer. If true, the answer is shown.
+  const [showAnswer, setShowAnswer] = useState(false); // this is the state for the answer
+  const [filteredFlashcards, setFilteredFlashcards] = useState(flashcardsList); // this state will be used to sort the flashcards
 
-  useEffect(() => { 
-    setRandomIndex(Math.floor(Math.random() * flashcardsList.length - 1));// the random index is being set to a new random number every time the flashcards array changes
-  },[flashcardsList]); // this useEffect is being called every time the flashcardsList changes
-  
-  const randomizedFlashcard = flashcardsList[randomIndex]; // this is a variable for a flashcard with a random index assigned to it
+  useEffect(() => { // this useEffect will re-render all flashcards whenever flashcardsList changes
+    setRandomIndex(Math.floor(Math.random() * filteredFlashcards.length - 1));
+  }, [filteredFlashcards]);
 
-  function handleQuestionButtonClick(){ // this function is called when the "Request A Question" button is clicked
-    setRandomIndex(Math.floor(Math.random() * (flashcardsList.length - 1))) // the random index is being set to a new random number
+  const randomizedFlashcard = filteredFlashcards[randomIndex]; //   this is the random flashcard that is being displayed
+
+  function handleQuestionButtonClick() { // this function is called when the "Request A Question" button is clicked
+    setRandomIndex(Math.floor(Math.random() * filteredFlashcards.length));
     setShowAnswer(false);
   }
 
-  function handleAnswerButtonClick(){ // this function is called when the "Reveal Answer" button is clicked
+  function handleAnswerButtonClick() { // this function is called when the "Reveal Answer" button is clicked
     setShowAnswer(true);
   }
-
+  
   return (
 
     <div className="overlay">
@@ -33,7 +33,10 @@ function TestMe({flashcardsList, setPage}) { // flashcardsList is the all the fl
           </div>
         </div>
         <div className="overlay__testme-content-subheading">
-          <h2>Test yourself on the topics you have learnt so far</h2>
+          <h2>Test yourself on the topics you have learnt so far:</h2>
+        </div>
+        <div className="overlay__testme-content-sort">
+          <SortTestMe flashcardsList={flashcardsList}setFlashCards={setFlashCards}setFilteredFlashcards={setFilteredFlashcards}/>
         </div>
         <div className="overlay__testme-content-button">
           <button onClick={handleQuestionButtonClick}>Request A Question</button>
